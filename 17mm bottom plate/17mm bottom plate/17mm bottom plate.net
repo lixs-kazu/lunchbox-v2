@@ -1,0 +1,41 @@
+(export (version D)
+  (design
+    (source "C:\\Users\\kznb_\\OneDrive\\デスクトップ\\設計中キーボード\\17mm bottom plate\\17mm bottom plate\\17mm bottom plate.sch")
+    (date "2020/04/12 21:03:00")
+    (tool "Eeschema (5.1.2)-2")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "17mm bottom plate.sch")
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref H1)
+      (value MountingHole_Pad)
+      (footprint MountingHole:MountingHole_2.2mm_M2_DIN965_Pad)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5E930B14)))
+  (libparts
+    (libpart (lib Mechanical) (part MountingHole_Pad)
+      (description "Mounting Hole with connection")
+      (docs ~)
+      (footprints
+        (fp MountingHole*Pad*))
+      (fields
+        (field (name Reference) H)
+        (field (name Value) MountingHole_Pad))
+      (pins
+        (pin (num 1) (name 1) (type input)))))
+  (libraries
+    (library (logical Mechanical)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib")))
+  (nets
+    (net (code 2) (name +5V)
+      (node (ref H1) (pin 1)))))
